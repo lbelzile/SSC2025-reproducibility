@@ -1,0 +1,219 @@
+[
+  {
+    "objectID": "SSC2025-reproducibility.html#background-information",
+    "href": "SSC2025-reproducibility.html#background-information",
+    "title": "Using open data to teach reproducibility",
+    "section": "Background information",
+    "text": "Background information\nI teach “Experimental Design and Statistical Methods” to PhD students in management sciences, coming from\n\nmarketing,\norganization behaviour and human ressources,\nuser experience,\ninformation technology, etc.\n\nStudents have heterogeneous background in terms of both statistics knowledge and programming skills."
+  },
+  {
+    "objectID": "SSC2025-reproducibility.html#reproducibility-crisis",
+    "href": "SSC2025-reproducibility.html#reproducibility-crisis",
+    "title": "Using open data to teach reproducibility",
+    "section": "Reproducibility crisis",
+    "text": "Reproducibility crisis"
+  },
+  {
+    "objectID": "SSC2025-reproducibility.html#the-garden-of-forking-paths",
+    "href": "SSC2025-reproducibility.html#the-garden-of-forking-paths",
+    "title": "Using open data to teach reproducibility",
+    "section": "The garden of forking paths",
+    "text": "The garden of forking paths\n\nChange of paradigm and generational change: my students supervisor have not been trained to do work properly, we need to form the students to adapt to the evolving landscape.\nGood practices (preregistration, sharing code and data, transparency) help alleviate reproducibility problems.\nNew easy-to-use tools out there to help researchers (e.g., ResearchBox).\nInstructors can leverage these to generate learning opportunities!"
+  },
+  {
+    "objectID": "SSC2025-reproducibility.html#defining-reproducibility",
+    "href": "SSC2025-reproducibility.html#defining-reproducibility",
+    "title": "Using open data to teach reproducibility",
+    "section": "Defining reproducibility",
+    "text": "Defining reproducibility\n\nDefinition of different dimensions of reproducible research (from The Turing Way project, illustration by Scriberia)."
+  },
+  {
+    "objectID": "SSC2025-reproducibility.html#ingredients-for-reproducible-research",
+    "href": "SSC2025-reproducibility.html#ingredients-for-reproducible-research",
+    "title": "Using open data to teach reproducibility",
+    "section": "Ingredients for reproducible research",
+    "text": "Ingredients for reproducible research\n\n\n\nMandatory\n\nRaw or cleaned data\nMethodological details:\n\nmodels\nvariables\nstatistics (coefficients, standard errors, degrees of freedom, \\(p\\)-values, effect size, confidence intervals).\n\n\n\nOptional\n\nPreregistration report\nQuestionnaires, etc.\nCode\n\n\n\n\nDetails may be hidden in code (also via comments) and in the supplementary material."
+  },
+  {
+    "objectID": "SSC2025-reproducibility.html#checking-data-agreement",
+    "href": "SSC2025-reproducibility.html#checking-data-agreement",
+    "title": "Using open data to teach reproducibility",
+    "section": "Checking data agreement",
+    "text": "Checking data agreement\nIt is helpful if papers report descriptive statistics (sample size, sociodemographic) to ensure we use the same data subsample.\nThere should be a clear description of exclusion rules or missing values for raw data."
+  },
+  {
+    "objectID": "SSC2025-reproducibility.html#how-to-find-open-data",
+    "href": "SSC2025-reproducibility.html#how-to-find-open-data",
+    "title": "Using open data to teach reproducibility",
+    "section": "How to find open data",
+    "text": "How to find open data\n\n\n\n\n\n\n\n\n\n\n\n\n\nData drawn from Open Science Foundation (OFS) or ResearchBox\nUse search with keywords (abstract, or code)"
+  },
+  {
+    "objectID": "SSC2025-reproducibility.html#criteria-for-selecting-papers",
+    "href": "SSC2025-reproducibility.html#criteria-for-selecting-papers",
+    "title": "Using open data to teach reproducibility",
+    "section": "Criteria for selecting papers",
+    "text": "Criteria for selecting papers\nPapers should cover a broad variety of fields\n\ninteresting story or research question\ngood experimental design\ncourse material overlap!\nenough details for reproducibility\n\n\nFor my course, diversity of topics and fields is important."
+  },
+  {
+    "objectID": "SSC2025-reproducibility.html#sharing-open-access-data",
+    "href": "SSC2025-reproducibility.html#sharing-open-access-data",
+    "title": "Using open data to teach reproducibility",
+    "section": "Sharing open-access data",
+    "text": "Sharing open-access data\nAll datasets are preprocessed are bundled via an R package with documentation (with online page).\n\nData cleaning is an essential tool, but too big a hurdle for my audience for anything but simple wrangling\nSome papers provide cleaning script, but\n\nthe code is often messy,\ndifferent softwares are used and\npackage obsolescence (tidyverse) complicates things."
+  },
+  {
+    "objectID": "SSC2025-reproducibility.html#activities-based-on-published-papers",
+    "href": "SSC2025-reproducibility.html#activities-based-on-published-papers",
+    "title": "Using open data to teach reproducibility",
+    "section": "Activities based on published papers",
+    "text": "Activities based on published papers\n\nPresentation of case studies in class\nDiscussion and criticism of methodological and results section\nWeekly assignments (reproducibility)\nPeer-review project in teams"
+  },
+  {
+    "objectID": "SSC2025-reproducibility.html#lesson-plan",
+    "href": "SSC2025-reproducibility.html#lesson-plan",
+    "title": "Using open data to teach reproducibility",
+    "section": "Lesson plan",
+    "text": "Lesson plan\n\nRecap of previous session, and problem set review\nStory time: describe the study for ‘motivation’\nSubstantive content (methods, concepts)\nReproducing results (workbook with code and conclusions, versus the paper)\nAnnotated papers with comments and criticism"
+  },
+  {
+    "objectID": "SSC2025-reproducibility.html#peer-reviewing-task",
+    "href": "SSC2025-reproducibility.html#peer-reviewing-task",
+    "title": "Using open data to teach reproducibility",
+    "section": "Peer-reviewing task",
+    "text": "Peer-reviewing task\n\nStudents learn by example, not by osmosis\nShow them the good, the bad and the ugly.\nCompare code with the paper, if available:\n\nwhat is omitted?\ndo results and descriptions match?"
+  },
+  {
+    "objectID": "SSC2025-reproducibility.html#what-we-dont-often-teach",
+    "href": "SSC2025-reproducibility.html#what-we-dont-often-teach",
+    "title": "Using open data to teach reproducibility",
+    "section": "What we don’t (often) teach",
+    "text": "What we don’t (often) teach\n\nHow to do randomization (especially for repeated measures)\nHow to choose the response variable\nHow to clean the data\nHow to make effective data visualization (dynamite plots)!\nHow to defined sensible exclusion criteria\nHow to report conclusions\n\nWe can learn or teach these from (counter)examples drawn from published papers."
+  },
+  {
+    "objectID": "SSC2025-reproducibility.html#impact-of-videoconferencing-on-idea-generation",
+    "href": "SSC2025-reproducibility.html#impact-of-videoconferencing-on-idea-generation",
+    "title": "Using open data to teach reproducibility",
+    "section": "1. Impact of videoconferencing on idea generation",
+    "text": "1. Impact of videoconferencing on idea generation\n\n\n\n\n\n\n\n\n\n\n\n\nBrucks and Levav (2022)\n\nIn a laboratory study […] we demonstrate that videoconferencing hampers idea generation because it focuses communicators on a screen, which prompts a narrower cognitive focus. Our results suggest that virtual interaction comes with a cognitive cost for creative idea generation.\n\n\n(Subjective) measurement of the number of creative ideas, variety of models that can be fit, comparing different tests.\n\n\n\nModel: Linear mixed model, negative binomial regression"
+  },
+  {
+    "objectID": "SSC2025-reproducibility.html#suggesting-amounts-for-donations",
+    "href": "SSC2025-reproducibility.html#suggesting-amounts-for-donations",
+    "title": "Using open data to teach reproducibility",
+    "section": "2. Suggesting amounts for donations",
+    "text": "2. Suggesting amounts for donations\n\n\nMoon and VanEpps (2023)\n\nAcross seven studies, we provide evidence that quantity requests, wherein people consider multiple choice options of how much to donate (e.g., $5, $10, or $15), increase contributions compared to open-ended requests.\n\n\n\n\n\n\n\n\n\n\n\n\n\nOur findings offer new conceptual insights into how quantity requests increase contributions as well as practical implications for charitable organizations to optimize contributions by leveraging the use of quantity requests.\n\nModel: Tobit type II regression and Poisson regression (independence test)"
+  },
+  {
+    "objectID": "SSC2025-reproducibility.html#integrated-decisions-in-online-shopping",
+    "href": "SSC2025-reproducibility.html#integrated-decisions-in-online-shopping",
+    "title": "Using open data to teach reproducibility",
+    "section": "3. Integrated decisions in online shopping",
+    "text": "3. Integrated decisions in online shopping\n\n\nDuke and Amir (2023)\n\nCustomers must often decide on the quantity to purchase in addition to whether to purchase. The current research introduces and compares the quantity-sequential selling format, in which shoppers resolve the purchase and quantity decisions separately, with the quantity-integrated selling format, where shoppers simultaneously consider whether and how many to buy. Although retailers often use the sequential format, we demonstrate that the integrated format can increase purchase rates.\n\n\n\n\n\n\n\n\n\n\n\nModel: logistic regression."
+  },
+  {
+    "objectID": "SSC2025-reproducibility.html#subjective-perception-of-distance",
+    "href": "SSC2025-reproducibility.html#subjective-perception-of-distance",
+    "title": "Using open data to teach reproducibility",
+    "section": "4. Subjective perception of distance",
+    "text": "4. Subjective perception of distance\nMaglio and Polman (2014) postulate that “spatial orientation toward (vs. away from) a location will cause that location to feel closer.”\n\n\n202 volunteers were recruited at the Bay Street subway station in Toronto, Ontario, Canada. All participants were asked to rate the subjective distance of another subway station on the line that they were traveling; the station was either coming up (e.g., the next stop) or just past (e.g., the previous stop).\n\n\nModel: 2 x 4 between-subject ANOVA."
+  },
+  {
+    "objectID": "SSC2025-reproducibility.html#refactoring-and-contrasts",
+    "href": "SSC2025-reproducibility.html#refactoring-and-contrasts",
+    "title": "Using open data to teach reproducibility",
+    "section": "Refactoring and contrasts",
+    "text": "Refactoring and contrasts"
+  },
+  {
+    "objectID": "SSC2025-reproducibility.html#boosting-understanding-of-scientific-consensus-to-correct-false-beliefs",
+    "href": "SSC2025-reproducibility.html#boosting-understanding-of-scientific-consensus-to-correct-false-beliefs",
+    "title": "Using open data to teach reproducibility",
+    "section": "5. Boosting understanding of scientific consensus to correct false beliefs",
+    "text": "5. Boosting understanding of scientific consensus to correct false beliefs\n\n\nStekelenburg et al. (2021)\n\nIn three experiments with more than 1,500 U.S. adults who held false beliefs, participants first learned the value of scientific consensus and how to identify it. Subsequently, they read a news article with information about a scientific consensus opposing their beliefs.\n\nModel: (3 group between-subject ANCOVA)"
+  },
+  {
+    "objectID": "SSC2025-reproducibility.html#belief-of-harm-of-genetically-engineered-food",
+    "href": "SSC2025-reproducibility.html#belief-of-harm-of-genetically-engineered-food",
+    "title": "Using open data to teach reproducibility",
+    "section": "Belief of harm of genetically engineered food",
+    "text": "Belief of harm of genetically engineered food\n\n\n\n\n\n\n\n\n\n\n\n\n\nPreregisted, choice of topic (Study 1 on climate change produced no difference), second study underpowered, power calculation, scale of measurement and response, population heterogeneity"
+  },
+  {
+    "objectID": "SSC2025-reproducibility.html#social-presence-in-social-media-products",
+    "href": "SSC2025-reproducibility.html#social-presence-in-social-media-products",
+    "title": "Using open data to teach reproducibility",
+    "section": "6. Social presence in social media products",
+    "text": "6. Social presence in social media products\n\n\nPoirier et al. (2024)\n\n\n\n\n\n\n\n\n\n\n\nWe conducted three experiments to explore how varying levels of perceived social presence (i.e., physical, implied, or absent human presence) in product photos affect consumer responses. The results indicate that social presence positively influences consumers’ emotions and product photo diagnosticity, which, in turn, positively impacts purchase intentions."
+  },
+  {
+    "objectID": "SSC2025-reproducibility.html#peer-review-task",
+    "href": "SSC2025-reproducibility.html#peer-review-task",
+    "title": "Using open data to teach reproducibility",
+    "section": "Peer-review task",
+    "text": "Peer-review task\n\nSelect papers that are suitable, but offer students a choice\n\nlevel of difficulty\nonly methods and concepts covered in class\naccess to data!\n\nNarrow the choice if there are multiple experiments\nAsk them to focus only on statistical aspects"
+  },
+  {
+    "objectID": "SSC2025-reproducibility.html#data-collection",
+    "href": "SSC2025-reproducibility.html#data-collection",
+    "title": "Using open data to teach reproducibility",
+    "section": "Data collection",
+    "text": "Data collection\n\nDiscuss with students the reliability of data collected on Prolifics and Amazon M’Turk (external validity?)\nRandomization and stratification: the tools must relate to the software used for data collection (e.g., Qualtrics)"
+  },
+  {
+    "objectID": "SSC2025-reproducibility.html#choose-your-battles",
+    "href": "SSC2025-reproducibility.html#choose-your-battles",
+    "title": "Using open data to teach reproducibility",
+    "section": "Choose your battles",
+    "text": "Choose your battles\n\nMethodology course, students must learn programming on the fly (via assignments and based on examples, I provide recordings with notebooks).\nI allow for both R and SPSS, but this complicates in-class presentation and management."
+  },
+  {
+    "objectID": "SSC2025-reproducibility.html#maximally-uninteresting",
+    "href": "SSC2025-reproducibility.html#maximally-uninteresting",
+    "title": "Using open data to teach reproducibility",
+    "section": "Maximally uninteresting",
+    "text": "Maximally uninteresting\n\n\n\nOften, results section formatting is terse and procedural. Students find them intimidating (akin to an unknown foreign language).\nStudents must nevertheless learn to criticize statistical methodology and spot potential problems."
+  },
+  {
+    "objectID": "SSC2025-reproducibility.html#spot-the-problems",
+    "href": "SSC2025-reproducibility.html#spot-the-problems",
+    "title": "Using open data to teach reproducibility",
+    "section": "Spot the problems",
+    "text": "Spot the problems\n\nA single factor (Levels of social presence: No vs. Medium vs. High) within-subjects design was used. In total, \\(\\color{#0072ce}{335}\\) participants recruited on Amazon Mechanical Turk (MTurk.com) completed an online survey.\n\n\nA repeated measure ANOVA with social presence (no, medium, and high) as the independent variable and positive emotional reaction as the dependent variable revealed a significant main effect \\((F({\\color{#0072ce}{1, 240}})=19.115, p&lt;0.001)\\).\n\n\nLinear regressions with random intercepts to account for repeated measures were performed. Results show that both positive emotional reaction \\((t({\\color{#0072ce}{2135}}) = 14.722;\\) \\(\\beta=0.308,\\) \\(p&lt;0.0001\\) […]"
+  },
+  {
+    "objectID": "SSC2025-reproducibility.html#the-good-the-bad-and-the-ugly",
+    "href": "SSC2025-reproducibility.html#the-good-the-bad-and-the-ugly",
+    "title": "Using open data to teach reproducibility",
+    "section": "The good, the bad and the ugly",
+    "text": "The good, the bad and the ugly\n\nDegrees of freedom do not match with reported sample size or methods.\nDigging into the data reveals an incomplete unbalanced design\n\nbetween 3 and 10 measurements per participant, mode 6.\nout of 335 participants, 94 did not see all three categories!\n\nAnalysis in SPSS kept only complete cases!\nThe degrees of freedom reveal that the author used ordinary linear regression (no accounting for repeated measures)."
+  },
+  {
+    "objectID": "SSC2025-reproducibility.html#weekly-exercises",
+    "href": "SSC2025-reproducibility.html#weekly-exercises",
+    "title": "Using open data to teach reproducibility",
+    "section": "Weekly exercises",
+    "text": "Weekly exercises\n\nTextbook or simulated data works as well, but lack motivation and often the messy features of real data.\nDifficulty of examples and questions: follow Goldilock’s principle\n\nthey needs to be easy for first exposition,\nbut hard enough to relate to problem set."
+  },
+  {
+    "objectID": "SSC2025-reproducibility.html#lessons-learned-the-hard-way",
+    "href": "SSC2025-reproducibility.html#lessons-learned-the-hard-way",
+    "title": "Using open data to teach reproducibility",
+    "section": "Lessons learned the hard way",
+    "text": "Lessons learned the hard way\n\nSome students try to just ‘get the answer right’, without learning the method.\nThere can be built up frustration, especially for people with low programming proficiency (steep learning curve)\nDespite examples, unequal use of literal reporting (Quarto) (lots of unformatted output and copy-paste)."
+  },
+  {
+    "objectID": "SSC2025-reproducibility.html#free-to-use",
+    "href": "SSC2025-reproducibility.html#free-to-use",
+    "title": "Using open data to teach reproducibility",
+    "section": "Free to use",
+    "text": "Free to use\n\nLink to slides\nCourse webpage and textbook\nR package with documentation"
+  },
+  {
+    "objectID": "SSC2025-reproducibility.html#references",
+    "href": "SSC2025-reproducibility.html#references",
+    "title": "Using open data to teach reproducibility",
+    "section": "References",
+    "text": "References\n\n\n\n\nBrucks, Melanie S., and Jonathan Levav. 2022. “Virtual Communication Curbs Creative Idea Generation.” Nature 605 (7908): 108–12. https://doi.org/10.1038/s41586-022-04643-y.\n\n\nDuke, Kristen E., and On Amir. 2023. “The Importance of Selling Formats: When Integrating Purchase and Quantity Decisions Increases Sales.” Marketing Science 42 (1): 87–109. https://doi.org/10.1287/mksc.2022.1364.\n\n\nMaglio, Sam J., and Evan Polman. 2014. “Spatial Orientation Shrinks and Expands Psychological Distance.” Psychological Science 25 (7): 1345–52. https://doi.org/10.1177/0956797614530571.\n\n\nMoon, Alice, and Eric M VanEpps. 2023. “Giving Suggestions: Using Quantity Requests to Increase Donations.” Journal of Consumer Research 50 (1): 190–210. https://doi.org/10.1093/jcr/ucac047.\n\n\nPoirier, Sara-Maude, Sarah Cosby, Sylvain Sénécal, Constantinos K. Coursaris, Marc Fredette, and Pierre-Majorique Léger. 2024. “The Impact of Social Presence Cues in Social Media Product Photos on Consumers’ Purchase Intentions.” Journal of Business Research 185: 114932. https://doi.org/10.1016/j.jbusres.2024.114932.\n\n\nStekelenburg, Aart van, Gabi Schaap, Harm Veling, and Moniek Buijzen. 2021. “Boosting Understanding and Identification of Scientific Consensus Can Help to Correct False Beliefs.” Psychological Science 32 (10): 1549–65. https://doi.org/10.1177/09567976211007788."
+  }
+]
