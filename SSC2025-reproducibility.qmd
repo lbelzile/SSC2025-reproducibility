@@ -540,7 +540,7 @@ The degrees of freedom reveal that the author used ordinary linear regression (n
 
 ## Free to use
 
-- [Link to slides](https://lbelzile.github.io/SSC2025-reproducibility)
+- [Link to slides: `https://lbelzile.github.io/SSC2025-reproducibility/`](https://lbelzile.github.io/SSC2025-reproducibility/SSC2025-reproducibility.html)
 - [Course webpage and textbook](https://lbelzile.github.io/experimental)
 - [**R** package with documentation](https://lbelzile.github.io/hecedsm)
 
