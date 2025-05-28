@@ -173,23 +173,8 @@ Léo Belzile, HEC Montréal
 </section>
 <section id="reproducibility-crisis" class="slide level2">
 <h2>Reproducibility crisis</h2>
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure>
-<p><img data-src="figures/replication_experimental_econ.png" style="width:65.0%"></p>
-</figure>
-</div>
-</div>
-<div class="cell-output-display">
-<div>
-<figure>
-<p><img data-src="figures/replication_experimental_econ1.png" style="width:65.0%"></p>
-</figure>
-</div>
-</div>
-</div>
-</section>
+
+<img data-src="figures/Ionidis_2005.png" class="quarto-figure quarto-figure-center r-stretch" style="width:65.0%"></section>
 <section id="the-garden-of-forking-paths" class="slide level2">
 <h2>The garden of forking paths</h2>
 <ul>
@@ -211,6 +196,7 @@ Léo Belzile, HEC Montréal
 <p><strong>Mandatory</strong></p>
 <ul>
 <li>Raw or cleaned data</li>
+<li>Description of exclusion rules</li>
 <li>Methodological details:
 <ul>
 <li>models</li>
@@ -224,17 +210,13 @@ Léo Belzile, HEC Montréal
 <li>Preregistration report</li>
 <li>Questionnaires, etc.</li>
 <li>Code</li>
+<li>Descriptive statistics (sample size, etc.)</li>
 </ul>
 </div></div>
 </div>
 <div style="font-size: 65%;">
 <p>Details may be hidden in code (also via comments) and in the supplementary material.</p>
 </div>
-</section>
-<section id="checking-data-agreement" class="slide level2">
-<h2>Checking data agreement</h2>
-<p>It is helpful if papers report descriptive statistics (sample size, sociodemographic) to ensure we use the same data subsample.</p>
-<p>There should be a clear description of exclusion rules or missing values for raw data.</p>
 </section>
 <section id="how-to-find-open-data" class="slide level2 smaller">
 <h2>How to find open data</h2>
@@ -251,7 +233,7 @@ Léo Belzile, HEC Montréal
 </div>
 </div><div class="column" style="width:70%;">
 <ul>
-<li>Data drawn from Open Science Foundation (OFS) or ResearchBox</li>
+<li>Data drawn from Open Science Foundation (OSF) or ResearchBox</li>
 <li>Use search with keywords (abstract, or code)</li>
 </ul>
 </div></div>
@@ -329,10 +311,18 @@ Léo Belzile, HEC Montréal
 <li>How to choose the response variable</li>
 <li>How to clean the data</li>
 <li>How to make effective data visualization (dynamite plots)!</li>
-<li>How to defined sensible exclusion criteria</li>
+<li>How to define sensible exclusion criteria</li>
 <li>How to report conclusions</li>
 </ul>
 <p>We can learn or teach these from (counter)examples drawn from published papers.</p>
+</section>
+<section id="opportunities-for-in-class-discussion" class="slide level2">
+<h2>Opportunities for in-class discussion</h2>
+<p>For example, consider data collection</p>
+<ul>
+<li>Discuss with students the reliability of data collected on Prolifics and Amazon M’Turk (external validity?)</li>
+<li>Randomization and stratification: the tools must relate to the software used for data collection (e.g., Qualtrics)</li>
+</ul>
 </section>
 <section id="impact-of-videoconferencing-on-idea-generation" class="slide level2 smaller">
 <h2>1. Impact of videoconferencing on idea generation</h2>
@@ -420,7 +410,7 @@ Léo Belzile, HEC Montréal
 <div>
 
 </div>
-<div class="cell quarto-layout-panel" data-layout-align="center" data-layout-ncol="2">
+<div class="cell quarto-layout-panel" data-layout-ncol="2" data-layout-align="center">
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
@@ -447,7 +437,7 @@ Léo Belzile, HEC Montréal
 <blockquote>
 <p>In three experiments with more than 1,500 U.S. adults who held false beliefs, participants first learned the value of scientific consensus and how to identify it. Subsequently, they read a news article with information about a scientific consensus opposing their beliefs.</p>
 </blockquote>
-<p>Model: (3 group between-subject ANCOVA)</p>
+<p>Model: 3 group between-subject ANCOVA</p>
 </div><div class="column" style="width:50%;">
 <div class="cell">
 <div class="cell-output-display">
@@ -497,26 +487,6 @@ Léo Belzile, HEC Montréal
 </blockquote>
 </div></div>
 </section>
-<section id="peer-review-task" class="slide level2">
-<h2>Peer-review task</h2>
-<ul>
-<li>Select papers that are suitable, but offer students a choice
-<ul>
-<li>level of difficulty</li>
-<li>only methods and concepts covered in class</li>
-<li>access to data!</li>
-</ul></li>
-<li>Narrow the choice if there are multiple experiments</li>
-<li>Ask them to focus only on statistical aspects</li>
-</ul>
-</section>
-<section id="data-collection" class="slide level2">
-<h2>Data collection</h2>
-<ul>
-<li>Discuss with students the reliability of data collected on Prolifics and Amazon M’Turk (external validity?)</li>
-<li>Randomization and stratification: the tools must relate to the software used for data collection (e.g., Qualtrics)</li>
-</ul>
-</section>
 <section id="choose-your-battles" class="slide level2">
 <h2>Choose your battles</h2>
 <ul>
@@ -543,6 +513,19 @@ Léo Belzile, HEC Montréal
 </div>
 </div>
 </div></div>
+</section>
+<section id="peer-review-task" class="slide level2">
+<h2>Peer-review task</h2>
+<ul>
+<li>Select papers that are suitable, but offer students a choice
+<ul>
+<li>level of difficulty</li>
+<li>only methods and concepts covered in class</li>
+<li>access to data!</li>
+</ul></li>
+<li>Narrow the choice if there are multiple experiments</li>
+<li>Ask them to focus only on statistical aspects</li>
+</ul>
 </section>
 <section id="spot-the-problems" class="slide level2 smaller">
 <h2>Spot the problems</h2>

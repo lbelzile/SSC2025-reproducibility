@@ -1,0 +1,548 @@
+---
+title: "Using open data to teach reproducibility"
+author: "Léo Belzile, HEC Montréal"
+subtitle: "SSC Annual meeting"
+date: "2025-05-28"
+date-format: "dddd, MMM D, YYYY"
+eval: true
+cache: true
+echo: true
+standalone: true
+bibliography: MATH80667A.bib
+format:
+  revealjs:
+    slide-number: true
+    html-math-method: mathjax
+    preview-links: auto
+    theme: [simple, hecmontreal.scss]
+    title-slide-attributes:
+      data-background-color: "#002855"
+    logo: "figures/logo_hec_montreal_bleu_web.png"
+---
+
+
+```{r include=FALSE}
+
+hecbleu <- c("#002855")
+fcols <- c(gris = "#888b8d",
+           bleu = "#0072ce",
+           aqua = "#00aec7",
+           vert = "#26d07c",
+           rouge = "#ff585d",
+           rose = "#eb6fbd",
+           jaune = "#f3d03e")
+pcols <- c(gris = "#d9d9d6",
+           bleu = "#92c1e9",
+           agua = "#88dbdf",
+           vert = "#8fe2b0",
+           rouge = "#ffb1bb",
+           rose = "#eab8e4",
+           jaune = "#f2f0a1")
+library(ggplot2)
+theme_set(theme_classic())
+library(patchwork)
+knitr::opts_chunk$set(fig.retina = 3, collapse = TRUE)
+options(digits = 3, width = 75)
+```
+
+## Background information
+
+I teach "Experimental Design and Statistical Methods" to PhD students in management sciences, coming from
+
+- marketing, 
+- organization behaviour and human ressources, 
+- user experience, 
+- information technology, etc.
+
+Students have **heterogeneous background** in terms of both statistics knowledge and programming skills.
+
+
+## Reproducibility crisis
+
+```{r}
+#| eval: true
+#| echo: false
+#| out-width: '65%'
+knitr::include_graphics("figures/replication_experimental_econ.png")
+knitr::include_graphics("figures/replication_experimental_econ1.png")
+```
+
+
+
+## The garden of forking paths
+
+
+- Change of paradigm and generational change: my students supervisor have not been trained to do work properly, we need to form the students to adapt to the evolving landscape. 
+- Good practices (preregistration, sharing code and data, transparency) help alleviate reproducibility problems.
+- New easy-to-use tools out there to help researchers (e.g., ResearchBox).
+- Instructors can leverage these to generate learning opportunities!
+
+
+
+## Defining reproducibility
+
+
+```{r}
+#| eval: true
+#| echo: false
+#| out.width: '80%'
+#| fig-align: 'center'
+#| fig-cap: "Definition of different dimensions of reproducible research (from The Turing Way project, illustration by Scriberia)."
+knitr::include_graphics("figures/ReproducibleDefinitionGrid.jpg")
+```
+
+## Ingredients for reproducible research
+
+
+::: {style="font-size: 80%;"}
+
+:::: {.columns}
+
+
+
+::: {.column width="60%"}
+
+**Mandatory**
+
+- Raw or cleaned data
+- Methodological details:
+    - models
+    - variables
+    - statistics (coefficients, standard errors, degrees of freedom, $p$-values, effect size, confidence intervals).
+
+:::
+
+
+::: {.column width="40%"}
+
+**Optional**
+
+- Preregistration report
+- Questionnaires, etc.
+- Code
+
+:::
+
+::::
+
+:::
+
+::: {style="font-size: 65%;"}
+
+Details may be hidden in code (also via comments) and in the supplementary material.
+
+:::
+
+## Checking data agreement
+
+It is helpful if papers report descriptive statistics (sample size, sociodemographic) to ensure we use the same data subsample.
+
+There should be a clear description of exclusion rules or missing values for raw data.
+
+    
+
+## How to find open data {.smaller}
+
+
+
+:::: {.columns}
+
+
+::: {.column width="30%"}
+
+```{r}
+#| eval: true
+#| echo: false
+#| out-width: '100%'
+#| fig-align: 'left'
+knitr::include_graphics("figures/researchbox_logo.png")
+```
+
+:::
+
+::: {.column width="70%"}
+
+
+
+- Data drawn from Open Science Foundation (OFS) or ResearchBox
+- Use search with keywords (abstract, or code)
+
+:::
+
+::::
+
+```{r}
+#| eval: true
+#| echo: false
+#| out-width: '100%'
+#| fig-align: 'center'
+knitr::include_graphics("figures/researchbox-bingo-table.png")
+```
+
+## Criteria for selecting papers
+
+Papers should cover a broad variety of fields
+
+- interesting story or research question
+- good experimental design
+- course material overlap!
+- enough details for reproducibility
+
+
+::: {style="font-size: 65%;"}
+
+For my course, diversity of topics and fields is important.
+
+:::
+
+
+## Sharing open-access data
+
+All datasets are preprocessed are bundled via an R package with documentation (with online page). 
+
+- Data cleaning is an essential tool, but too big a hurdle for my audience for anything but simple wrangling
+- Some papers provide cleaning script, but 
+    - the code is often messy, 
+    - different softwares are used and 
+    - package obsolescence (tidyverse) complicates things.
+
+
+## Activities based on published papers
+
+- Presentation of case studies in class
+- Discussion and criticism of methodological and results section
+- Weekly assignments (reproducibility)
+- Peer-review project in teams
+
+## Lesson plan
+
+- Recap of previous session, and problem set review
+- Story time: describe the study for 'motivation'
+- Substantive content (methods, concepts)
+- Reproducing results (workbook with code and conclusions, versus the paper)
+- Annotated papers with comments and criticism
+
+## Peer-reviewing task
+
+- Students learn by example, not by osmosis
+- Show them the good, the bad and the ugly.
+- Compare code with the paper, if available: 
+   - what is omitted? 
+   - do results and descriptions match?																																																			
+
+
+
+## What we don't (often) teach
+
+- How to do randomization (especially for repeated measures)
+- How to choose the response variable
+- How to clean the data
+- How to make effective data visualization (dynamite plots)!
+- How to defined sensible exclusion criteria
+- How to report conclusions 
+
+
+We can learn or teach these from (counter)examples drawn from published papers.
+
+
+
+
+## 1. Impact of videoconferencing on idea generation  {.smaller}
+
+
+:::: {.columns}
+
+::: {.column width="40%"}
+```{r}
+#| eval: true
+#| echo: false
+#| out-width: '100%'
+knitr::include_graphics("figures/Brucks_Levav-virtual_communications.png")
+```
+
+:::
+
+
+::: {.column width="60%"}
+
+@Brucks.Levav:2022
+
+> In a laboratory study [...]  we demonstrate that videoconferencing hampers idea generation because it focuses communicators on a screen, which prompts a narrower cognitive focus. Our results suggest that virtual interaction comes with a cognitive cost for creative idea generation.
+
+
+::: {style="font-size: 80%;"}
+
+(Subjective) measurement of the number of creative ideas, variety of models that can be fit, comparing different tests.
+
+:::
+
+:::
+
+::::
+
+- Model: Linear mixed model, negative binomial regression
+
+
+## 2. Suggesting amounts for donations {.smaller}
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+@Moon.VanEpps:2023
+
+> Across seven studies, we provide evidence that quantity requests, wherein people consider multiple choice options of how much to donate (e.g., $5, $10, or $15), increase contributions compared to open-ended requests. 
+
+
+:::
+
+::: {.column width="50%"}
+
+```{r}
+#| eval: true
+#| echo: false
+#| out-width: '100%'
+knitr::include_graphics("figures/Moon_VanEpps-giving.png")
+```
+
+:::
+
+::::
+
+
+> Our findings offer new conceptual insights into how quantity requests increase contributions as well as practical implications for charitable organizations to optimize contributions by leveraging the use of quantity requests.
+
+
+Model: Tobit type II regression and Poisson regression (independence test)
+
+## 3. Integrated decisions in online shopping {.smaller}
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+@Duke.Amir:2023
+
+> Customers must often decide on the quantity to purchase in addition to whether to purchase. The current research introduces and compares the quantity-sequential selling format, in which shoppers resolve the purchase and quantity decisions separately, with the quantity-integrated selling format, where shoppers simultaneously consider whether and how many to buy. Although retailers often use the sequential format, we demonstrate that the integrated format can increase purchase rates.
+
+:::
+
+::: {.column width="40%"}
+
+```{r}
+#| eval: true
+#| echo: false
+#| out-width: '100%'
+knitr::include_graphics("figures/Duke_Amir.png")
+```
+
+
+Model: logistic regression.
+:::
+
+::::
+
+## 4. Subjective perception of distance 
+
+@Maglio.Polman:2014 postulate that "spatial orientation toward (vs. away from) a location will cause that location to feel closer." 
+
+
+::: {style="font-size: 90%;"}
+
+> 202 volunteers were recruited at the Bay Street subway station in Toronto, Ontario, Canada. All participants were asked to rate the subjective distance of another subway station on the line that they were traveling; the station was either coming up (e.g., the next stop) or just past (e.g., the previous stop).
+
+:::
+
+Model: 2 x 4 between-subject ANOVA.
+
+## Refactoring and contrasts
+
+```{r}
+#| eval: true
+#| echo: false
+#| layout-ncol: 2
+#| out-width: '100%'
+#| fig-align: 'center'
+knitr::include_graphics("figures/Maglio_Polman.png")
+#knitr::include_graphics("figures/fig-interactionplotMP-1.png")
+knitr::include_graphics("figures/Maglio_Polman2.png")
+```
+
+
+## 5. Boosting understanding of scientific consensus to correct false beliefs {.smaller}
+
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+@vanStekelenburg:2021
+
+> In three experiments with more than 1,500 U.S. adults who held false beliefs, participants first learned the value of scientific consensus and how to identify it. Subsequently, they read a news article with information about a scientific consensus opposing their beliefs.
+
+Model: (3 group between-subject ANCOVA) 
+
+:::
+
+::: {.column width="50%"}
+
+```{r}
+#| eval: true
+#| echo: false
+knitr::include_graphics("figures/vanStekelenburg.png")
+```
+
+:::
+
+::::
+
+## Belief of harm of genetically engineered food {.smaller}
+
+```{r}
+#| eval: true
+#| echo: false
+#| layout-ncol: 2
+knitr::include_graphics("figures/fig-vanStekS3-1.png")
+knitr::include_graphics("figures/fig-vanStekS3f1-1.png")
+```
+
+Preregisted, choice of topic (Study 1 on climate change produced no difference), second study underpowered, power calculation, scale of measurement and response, population heterogeneity
+
+
+
+## 6. Social presence in social media products {.smaller}
+
+:::: {.columns}
+
+
+
+::: {.column width="50%"}
+
+@Poirier:2024
+
+```{r}
+#| eval: true
+#| echo: false
+#| out-width: '100%'
+knitr::include_graphics("figures/Poirier.png")
+```
+
+:::
+
+
+::: {.column width="50%"}
+
+> We conducted three experiments to explore how varying levels of perceived social presence (i.e., physical, implied, or absent human presence) in product photos affect consumer responses. The results indicate that social presence positively influences consumers’ emotions and product photo diagnosticity, which, in turn, positively impacts purchase intentions.
+
+
+:::
+
+::::
+
+
+## Peer-review task
+
+- Select papers that are suitable, but offer students a choice
+    - level of difficulty
+    - only methods and concepts covered in class
+    - access to data!
+- Narrow the choice if there are multiple experiments
+- Ask them to focus only on statistical aspects
+
+## Data collection
+
+- Discuss with students the reliability of data collected on Prolifics and Amazon M'Turk (external validity?)
+- Randomization and stratification: the tools must relate to the software used for data collection (e.g., Qualtrics)
+
+## Choose your battles
+
+- Methodology course, students must learn programming on the fly (via assignments and based on examples, I provide recordings with notebooks).
+- I allow for both R and SPSS, but this complicates in-class presentation and management.
+
+
+## Maximally uninteresting
+
+::::{.columns}
+
+
+
+::: {.column width="40%"}
+
+
+::: {style="font-size: 90%;"}
+
+Often, results section formatting is terse and procedural. Students find them intimidating (akin to an unknown foreign language).
+
+Students must nevertheless learn to criticize statistical methodology and spot potential problems.
+
+:::
+
+:::
+
+
+
+::: {.column width="60%"}
+```{r}
+#| eval: true
+#| echo: false
+#| out-width: '100%'
+#| fig-align: 'center'
+knitr::include_graphics("figures/Brucks_Levav.png")
+```
+
+:::
+
+::::
+
+## Spot the problems {.smaller}
+
+> A single factor (Levels of social presence: No vs. Medium vs. High) **within-subjects design** was used. In total, $\color{#0072ce}{335}$ participants recruited on Amazon Mechanical Turk (MTurk.com) completed an online survey.
+
+> A repeated measure ANOVA with social presence (no, medium, and high) as the independent variable and positive emotional reaction as the dependent variable revealed a significant main effect $(F({\color{#0072ce}{1, 240}})=19.115, p<0.001)$.
+
+> Linear regressions with random intercepts to account for repeated measures were performed. Results show that both positive emotional reaction $(t({\color{#0072ce}{2135}}) = 14.722;$ $\beta=0.308,$ $p<0.0001$ [...]
+
+
+
+## The good, the bad and the ugly
+
+
+::: {style="font-size: 80%;"}
+
+Degrees of freedom do not match with reported sample size or methods.
+
+
+Digging into the data reveals an incomplete unbalanced design 
+
+- between 3 and 10 measurements per participant, mode 6. 
+- out of 335 participants, 94 did not see all three categories! 
+
+Analysis in SPSS kept only complete cases!
+
+The degrees of freedom reveal that the author used ordinary linear regression (no accounting for repeated measures).
+
+:::
+
+## Weekly exercises
+
+- Textbook or simulated data works as well, but lack motivation and often the messy features of real data.
+- Difficulty of examples and questions: follow Goldilock's principle
+   - they needs to be easy for first exposition,
+   - but hard enough to relate to problem set.
+   
+## Lessons learned the hard way
+
+- Some students try to just 'get the answer right', without learning the method.
+- There can be built up frustration, especially for people with low programming proficiency (steep learning curve)
+- Despite examples, unequal use of literal reporting (Quarto) (lots of unformatted output and copy-paste).
+
+## Free to use
+
+- [Link to slides: `https://lbelzile.github.io/SSC2025-reproducibility/`](https://lbelzile.github.io/SSC2025-reproducibility/SSC2025-reproducibility.html)
+- [Course webpage and textbook](https://lbelzile.github.io/experimental)
+- [**R** package with documentation](https://lbelzile.github.io/hecedsm)
+
+
+## References

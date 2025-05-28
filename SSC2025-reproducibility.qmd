@@ -63,8 +63,10 @@ Students have **heterogeneous background** in terms of both statistics knowledge
 #| eval: true
 #| echo: false
 #| out-width: '65%'
-knitr::include_graphics("figures/replication_experimental_econ.png")
-knitr::include_graphics("figures/replication_experimental_econ1.png")
+#| fig-align: "center"
+knitr::include_graphics("figures/Ionidis_2005.png")
+#knitr::include_graphics("figures/replication_experimental_econ.png")
+#knitr::include_graphics("figures/replication_experimental_econ1.png")
 ```
 
 
@@ -105,6 +107,7 @@ knitr::include_graphics("figures/ReproducibleDefinitionGrid.jpg")
 **Mandatory**
 
 - Raw or cleaned data
+- Description of exclusion rules
 - Methodological details:
     - models
     - variables
@@ -120,6 +123,7 @@ knitr::include_graphics("figures/ReproducibleDefinitionGrid.jpg")
 - Preregistration report
 - Questionnaires, etc.
 - Code
+- Descriptive statistics (sample size, etc.)
 
 :::
 
@@ -132,14 +136,6 @@ knitr::include_graphics("figures/ReproducibleDefinitionGrid.jpg")
 Details may be hidden in code (also via comments) and in the supplementary material.
 
 :::
-
-## Checking data agreement
-
-It is helpful if papers report descriptive statistics (sample size, sociodemographic) to ensure we use the same data subsample.
-
-There should be a clear description of exclusion rules or missing values for raw data.
-
-    
 
 ## How to find open data {.smaller}
 
@@ -164,7 +160,7 @@ knitr::include_graphics("figures/researchbox_logo.png")
 
 
 
-- Data drawn from Open Science Foundation (OFS) or ResearchBox
+- Data drawn from Open Science Foundation (OSF) or ResearchBox
 - Use search with keywords (abstract, or code)
 
 :::
@@ -238,13 +234,20 @@ All datasets are preprocessed are bundled via an R package with documentation (w
 - How to choose the response variable
 - How to clean the data
 - How to make effective data visualization (dynamite plots)!
-- How to defined sensible exclusion criteria
+- How to define sensible exclusion criteria
 - How to report conclusions 
 
 
 We can learn or teach these from (counter)examples drawn from published papers.
 
 
+
+## Opportunities for in-class discussion
+
+For example, consider data collection
+
+- Discuss with students the reliability of data collected on Prolifics and Amazon M'Turk (external validity?)
+- Randomization and stratification: the tools must relate to the software used for data collection (e.g., Qualtrics)
 
 
 ## 1. Impact of videoconferencing on idea generation  {.smaller}
@@ -382,7 +385,7 @@ knitr::include_graphics("figures/Maglio_Polman2.png")
 
 > In three experiments with more than 1,500 U.S. adults who held false beliefs, participants first learned the value of scientific consensus and how to identify it. Subsequently, they read a news article with information about a scientific consensus opposing their beliefs.
 
-Model: (3 group between-subject ANCOVA) 
+Model: 3 group between-subject ANCOVA
 
 :::
 
@@ -442,20 +445,6 @@ knitr::include_graphics("figures/Poirier.png")
 ::::
 
 
-## Peer-review task
-
-- Select papers that are suitable, but offer students a choice
-    - level of difficulty
-    - only methods and concepts covered in class
-    - access to data!
-- Narrow the choice if there are multiple experiments
-- Ask them to focus only on statistical aspects
-
-## Data collection
-
-- Discuss with students the reliability of data collected on Prolifics and Amazon M'Turk (external validity?)
-- Randomization and stratification: the tools must relate to the software used for data collection (e.g., Qualtrics)
-
 ## Choose your battles
 
 - Methodology course, students must learn programming on the fly (via assignments and based on examples, I provide recordings with notebooks).
@@ -495,6 +484,17 @@ knitr::include_graphics("figures/Brucks_Levav.png")
 :::
 
 ::::
+
+
+## Peer-review task
+
+- Select papers that are suitable, but offer students a choice
+    - level of difficulty
+    - only methods and concepts covered in class
+    - access to data!
+- Narrow the choice if there are multiple experiments
+- Ask them to focus only on statistical aspects
+
 
 ## Spot the problems {.smaller}
 

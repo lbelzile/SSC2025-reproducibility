@@ -32,21 +32,14 @@
     "href": "SSC2025-reproducibility.html#ingredients-for-reproducible-research",
     "title": "Using open data to teach reproducibility",
     "section": "Ingredients for reproducible research",
-    "text": "Ingredients for reproducible research\n\n\n\nMandatory\n\nRaw or cleaned data\nMethodological details:\n\nmodels\nvariables\nstatistics (coefficients, standard errors, degrees of freedom, \\(p\\)-values, effect size, confidence intervals).\n\n\n\nOptional\n\nPreregistration report\nQuestionnaires, etc.\nCode\n\n\n\n\nDetails may be hidden in code (also via comments) and in the supplementary material."
-  },
-  {
-    "objectID": "SSC2025-reproducibility.html#checking-data-agreement",
-    "href": "SSC2025-reproducibility.html#checking-data-agreement",
-    "title": "Using open data to teach reproducibility",
-    "section": "Checking data agreement",
-    "text": "Checking data agreement\nIt is helpful if papers report descriptive statistics (sample size, sociodemographic) to ensure we use the same data subsample.\nThere should be a clear description of exclusion rules or missing values for raw data."
+    "text": "Ingredients for reproducible research\n\n\n\nMandatory\n\nRaw or cleaned data\nDescription of exclusion rules\nMethodological details:\n\nmodels\nvariables\nstatistics (coefficients, standard errors, degrees of freedom, \\(p\\)-values, effect size, confidence intervals).\n\n\n\nOptional\n\nPreregistration report\nQuestionnaires, etc.\nCode\nDescriptive statistics (sample size, etc.)\n\n\n\n\nDetails may be hidden in code (also via comments) and in the supplementary material."
   },
   {
     "objectID": "SSC2025-reproducibility.html#how-to-find-open-data",
     "href": "SSC2025-reproducibility.html#how-to-find-open-data",
     "title": "Using open data to teach reproducibility",
     "section": "How to find open data",
-    "text": "How to find open data\n\n\n\n\n\n\n\n\n\n\n\n\n\nData drawn from Open Science Foundation (OFS) or ResearchBox\nUse search with keywords (abstract, or code)"
+    "text": "How to find open data\n\n\n\n\n\n\n\n\n\n\n\n\n\nData drawn from Open Science Foundation (OSF) or ResearchBox\nUse search with keywords (abstract, or code)"
   },
   {
     "objectID": "SSC2025-reproducibility.html#criteria-for-selecting-papers",
@@ -88,7 +81,14 @@
     "href": "SSC2025-reproducibility.html#what-we-dont-often-teach",
     "title": "Using open data to teach reproducibility",
     "section": "What we don’t (often) teach",
-    "text": "What we don’t (often) teach\n\nHow to do randomization (especially for repeated measures)\nHow to choose the response variable\nHow to clean the data\nHow to make effective data visualization (dynamite plots)!\nHow to defined sensible exclusion criteria\nHow to report conclusions\n\nWe can learn or teach these from (counter)examples drawn from published papers."
+    "text": "What we don’t (often) teach\n\nHow to do randomization (especially for repeated measures)\nHow to choose the response variable\nHow to clean the data\nHow to make effective data visualization (dynamite plots)!\nHow to define sensible exclusion criteria\nHow to report conclusions\n\nWe can learn or teach these from (counter)examples drawn from published papers."
+  },
+  {
+    "objectID": "SSC2025-reproducibility.html#opportunities-for-in-class-discussion",
+    "href": "SSC2025-reproducibility.html#opportunities-for-in-class-discussion",
+    "title": "Using open data to teach reproducibility",
+    "section": "Opportunities for in-class discussion",
+    "text": "Opportunities for in-class discussion\nFor example, consider data collection\n\nDiscuss with students the reliability of data collected on Prolifics and Amazon M’Turk (external validity?)\nRandomization and stratification: the tools must relate to the software used for data collection (e.g., Qualtrics)"
   },
   {
     "objectID": "SSC2025-reproducibility.html#impact-of-videoconferencing-on-idea-generation",
@@ -130,7 +130,7 @@
     "href": "SSC2025-reproducibility.html#boosting-understanding-of-scientific-consensus-to-correct-false-beliefs",
     "title": "Using open data to teach reproducibility",
     "section": "5. Boosting understanding of scientific consensus to correct false beliefs",
-    "text": "5. Boosting understanding of scientific consensus to correct false beliefs\n\n\nStekelenburg et al. (2021)\n\nIn three experiments with more than 1,500 U.S. adults who held false beliefs, participants first learned the value of scientific consensus and how to identify it. Subsequently, they read a news article with information about a scientific consensus opposing their beliefs.\n\nModel: (3 group between-subject ANCOVA)"
+    "text": "5. Boosting understanding of scientific consensus to correct false beliefs\n\n\nStekelenburg et al. (2021)\n\nIn three experiments with more than 1,500 U.S. adults who held false beliefs, participants first learned the value of scientific consensus and how to identify it. Subsequently, they read a news article with information about a scientific consensus opposing their beliefs.\n\nModel: 3 group between-subject ANCOVA"
   },
   {
     "objectID": "SSC2025-reproducibility.html#belief-of-harm-of-genetically-engineered-food",
@@ -147,20 +147,6 @@
     "text": "6. Social presence in social media products\n\n\nPoirier et al. (2024)\n\n\n\n\n\n\n\n\n\n\n\nWe conducted three experiments to explore how varying levels of perceived social presence (i.e., physical, implied, or absent human presence) in product photos affect consumer responses. The results indicate that social presence positively influences consumers’ emotions and product photo diagnosticity, which, in turn, positively impacts purchase intentions."
   },
   {
-    "objectID": "SSC2025-reproducibility.html#peer-review-task",
-    "href": "SSC2025-reproducibility.html#peer-review-task",
-    "title": "Using open data to teach reproducibility",
-    "section": "Peer-review task",
-    "text": "Peer-review task\n\nSelect papers that are suitable, but offer students a choice\n\nlevel of difficulty\nonly methods and concepts covered in class\naccess to data!\n\nNarrow the choice if there are multiple experiments\nAsk them to focus only on statistical aspects"
-  },
-  {
-    "objectID": "SSC2025-reproducibility.html#data-collection",
-    "href": "SSC2025-reproducibility.html#data-collection",
-    "title": "Using open data to teach reproducibility",
-    "section": "Data collection",
-    "text": "Data collection\n\nDiscuss with students the reliability of data collected on Prolifics and Amazon M’Turk (external validity?)\nRandomization and stratification: the tools must relate to the software used for data collection (e.g., Qualtrics)"
-  },
-  {
     "objectID": "SSC2025-reproducibility.html#choose-your-battles",
     "href": "SSC2025-reproducibility.html#choose-your-battles",
     "title": "Using open data to teach reproducibility",
@@ -173,6 +159,13 @@
     "title": "Using open data to teach reproducibility",
     "section": "Maximally uninteresting",
     "text": "Maximally uninteresting\n\n\n\nOften, results section formatting is terse and procedural. Students find them intimidating (akin to an unknown foreign language).\nStudents must nevertheless learn to criticize statistical methodology and spot potential problems."
+  },
+  {
+    "objectID": "SSC2025-reproducibility.html#peer-review-task",
+    "href": "SSC2025-reproducibility.html#peer-review-task",
+    "title": "Using open data to teach reproducibility",
+    "section": "Peer-review task",
+    "text": "Peer-review task\n\nSelect papers that are suitable, but offer students a choice\n\nlevel of difficulty\nonly methods and concepts covered in class\naccess to data!\n\nNarrow the choice if there are multiple experiments\nAsk them to focus only on statistical aspects"
   },
   {
     "objectID": "SSC2025-reproducibility.html#spot-the-problems",
